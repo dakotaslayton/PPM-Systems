@@ -1,12 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>PPM Systems</title>
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180.png">
+  <meta name="theme-color" content="#0b1a34">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js');
+    }
+  </script>
 </head>
 <body>
   <h1>PPM Systems</h1>
-  <p>If you can read this, GitHub Pages is serving your index.html 🎉</p>
+  <p>If you can read this, Pages is serving index.html 🎉</p>
 </body>
 </html>
